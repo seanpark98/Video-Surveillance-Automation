@@ -1,4 +1,4 @@
-# Surveillance Camera/CCTV Automation System
+# Surveillance Camera/CCTV Automation Program
 
 ![image](https://user-images.githubusercontent.com/12313517/151663110-8387681a-9e47-4884-98da-a75daebd8a08.png)
 <br>
