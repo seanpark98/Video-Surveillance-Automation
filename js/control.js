@@ -48,7 +48,7 @@ function shiftView(cam, view){
         var request = "";
         switch(temp.type) {
             case "one":
-                url = temp.link + "?menu=preset&action=control&Channel=0&Preset=" + view;
+                url = temp.link + "?menu=preset&action=control&Channel=0&Preset=" + view + "&SeqId=1"
                 request = "POST";
                 break;
             case "two":
@@ -80,15 +80,15 @@ function startRoutine(cam, route){
         var request = "";
         switch(temp.type) {
             case "one":
-                url = temp.link + "?menu=group&action=control&Channel=0Group=" + route + "&Mode=Start&SeqId=1";
-                request = "GET";
+                url = temp.link + "?menu=swing&action=control&Channel=0&Mode=" + route + "&SeqId=1";
+                request = "POST";
                 break;
             case "two":
                 url= temp.link + "?action=sendgrp&GRP_CHANNEL=1&GROUP_GOTO=" + route;
                 request = "POST"
                 break;
             case "three":
-                url = temp.link +"/GRPCtrl/channels/1/group/" + route + "/goto";
+                url = temp.link +"/PTZCtrl/channels/1/patrols/" + route + "/start";
                 request = "PUT";
                 break;
         } $.ajax({
