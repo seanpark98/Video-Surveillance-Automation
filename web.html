@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang = "ko">
+<head>
+    <meta charset = "utf-8">
+    <title>리모컨</title>
+    <link rel = "stylesheet" href = "css/css.css">
+</head>
+    <body>
+        <script src = "js/jquery-1.9.1.min.js"></script>
+        <div id = "title">CCTV 조작 리모컨</div>
+        <div class = "container">
+            <div class = "row">
+                <div class = "cell">
+                    <!-- Radio items to select the type of video for opening in the web and ping test. Each radio item represents the area where camera is located --> 
+                    <div class = "box">
+                        <div class = "radio">
+                            <div class = "ratio">
+                                <input id = "A" class = "sr-only" type = "radio" name = "temp" value="A " checked>
+                                <label for = "A">A</label>
+                            </div>
+                            <div class = "ratio">
+                                <input id = "B" class = "sr-only" type = "radio" name = "temp" value="B ">
+                                <label for = "B">B</label>
+                            </div>
+                            <div class = "ratio">
+                                <input id = "C" class = "sr-only" type = "radio" name = "temp" value="C ">
+                                <label for = "C">C</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "box">
+                        <div class = "radio">
+                            <div class = "ratio">
+                                <input id = "D" class = "sr-only" type = "radio" name = "temp" value="D ">
+                                <label for = "D">D</label>
+                            </div>
+                            <div class = "ratio">
+                                <input id = "E" class = "sr-only" type = "radio" name = "temp" value="E ">
+                                <label for = "E">E</label>
+                            </div>
+                            <div class = "ratio">
+                                <input id = "F" class = "sr-only" type = "radio" name = "temp" value="서버 ">
+                                <label for = "F">서버</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class = "cell">
+                        <input id = "input-text" type = "text" placeholder = "번호" maxlength="2" autofocus >
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "cell">
+                    <div id = "time">화이팅</div>
+                </div>
+                <div class = "cell">
+                    <div id = "text">리모컨</div>
+                </div>
+            </div>
+            <!-- Buttons for changing cameras to day/night presets, resetting to default presets, and starting swing routines -->
+            <div class = "row">
+                <div class = "cell">
+                    <input type = "button" id = "day-view" class = "bt" value = "주간 감시">
+                </div>
+                <div class = "cell">
+                    <input type = "button" id = "night-view" class = "bt" value = "야간 감시">
+                </div>
+            </div>
+            <div class = "row">
+                <!-- Button to synchronize time in all cameras within surveillance -->
+                <div class = "cell">
+                    <input type = "button" id = "time-set" class = "bt" value = "시간 동조">
+                </div>
+                <!--Button to check whether a specific camera is online with a ping test -->
+                <div class = "cell">
+                    <input type = "button" id = "ping-test" class = "bt" value = "핑 테스트">
+                </div>
+            </div>
+            <div class = "row">
+                <!-- Hidden text area to quickly check password for camera specific web servers -->
+                <div class= "cell">
+                    <div id = "pw">pw</div>
+                </div>
+            </div>
+        </div>
+        <script src = "js/cameras.js"></script>
+        <script src = "js/control.js"></script>
+        <script src = "js/datetime.js"></script>
+        <script src = "js/main.js"></script>
+    </body>
+</html>
