@@ -60,7 +60,7 @@ function camInfo(cam){
 function openWeb(){
     currDateTime();
     try{
-        window.open(camInfo(currCam()).link, now, "width = 650, height = 500, top = 250, left = 630, scrollbars = yes, resizeable = yes");
+        window.open(camInfo(currCam()).link, now, "width = 650, height = 500, top = 250, left = 630, scrollbars = yes, resizable = yes");
     } catch(err){
         alert(currCam() + "(은)는 존재하지 않는 카메라입니다.");
     }
