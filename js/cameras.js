@@ -1,6 +1,6 @@
 /* JS file with an arry of all the cameras with its information for constant access by other functions */
 
-//An array containing each camera's name, link, type, password, and ip as an object(all parts masked due to security reasons)
+//An array containing each camera's name, link, type, password, and ip as an object(all parts masked due to security reasons). Naming rule of camera: zone + number.
 const cameras = [
     { name: "A 1", link: "https://a.1", type: "two", pass: "twoPassword", ip: "a.1"}, 
     { name: "A 2", link: "https://a.2", type: "one", pass: "onePassword", ip: "a.2"}, 
