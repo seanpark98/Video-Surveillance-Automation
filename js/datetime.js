@@ -1,6 +1,5 @@
 /*JS file with a function to get current time for constant access by other functions*/
 
-
 let now;
 let year;
 let month;
