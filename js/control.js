@@ -84,7 +84,7 @@ function startRoutine(cam, route){
                 request = "POST";
                 break;
             case "two":
-                url= temp.link + "?action=sendgrp&GRP_CHANNEL=1&GROUP_GOTO=" + route;
+                url= temp.link + "?action=sendptz&PTZ_CHANNEL=1&PTZ_PRESETGOTO=15" + route;
                 request = "POST"
                 break;
             case "three":
